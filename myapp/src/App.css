@@ -1,0 +1,149 @@
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+#root > div {
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  font-family: Arial;
+}
+
+.leftArea {
+    float: left;
+    width: 10%;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 1px solid #aaaaaa;
+}
+
+.rightArea {
+  float: left;
+  width: 90%;
+  height: 100%;
+}
+
+.folderOperations {
+  height: 7%;
+}
+
+.folderOperations p {
+  font-size: 0.8vw;
+  margin: 0;
+}
+
+.foldersList {
+  background: #f0f0f0;
+  height: 93%;
+}
+
+.folderItem {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2vw;
+  padding: 5px 10px;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.folderItem:before {
+  content: " > ";
+}
+.folderItem.selected {
+  color: white;
+  background: #34517d;
+}
+
+.folderItem:hover {
+  cursor: pointer;
+}
+
+.mediaList {
+  background: url("/assets/bg.jpg");
+  height: 93%;
+  overflow-y: scroll;
+}
+
+.mediaWrapper {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid black;
+
+}
+
+.mediaWrapper.selected {
+  border: 2px solid #4285f4;
+}
+
+.mediaWrapper:hover {
+  cursor: pointer;
+}
+
+.mediaWrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.control-bar {
+  box-sizing: border-box;
+  height: 7%;
+  width: 100%;
+  background: white;
+  border-bottom: 2px solid black;
+}
+
+.btnClass {
+  background: transparent;
+	display: flex;
+	height: 44px;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 2px solid rgba(128, 128, 128, 0.2);
+	font-size: 14px;
+	font-weight: 600;
+	transition: border .125s ease, background .125s ease;
+}
+.btnClass:hover {
+	border: 2px solid grey;
+	cursor: pointer;
+}
+.btnClass[data-primary='true'] {
+	border: 2px solid #4285f4;
+}
+.btnClass[data-primary='true']:hover {
+	background: #4285f4;
+}
+
+.folderOperations .btnClass {
+  color: black;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.mediaViewer {
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 360px;
+  position: absolute;
+  background: #909090;
+}
+
+.mediaViewer .titlebar {
+  
+}
